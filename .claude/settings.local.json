@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -lh /mnt/hgfs/13324529/)",
+      "Read(//mnt/hgfs/13324529/**)",
+      "Bash(head -5 /mnt/hgfs/13324529/genotype.ped 2>/dev/null | cut -c1-500 && echo \"---PED DIM---\" && wc -l /mnt/hgfs/13324529/genotype.ped)",
+      "Bash(awk '{print NF}' /mnt/hgfs/13324529/genotype.ped)",
+      "Bash(awk '{print $5}' /mnt/hgfs/13324529/genotype.ped)",
+      "Bash(awk '{print $6}' /mnt/hgfs/13324529/genotype.ped)",
+      "Bash(awk '{print $3}' /mnt/hgfs/13324529/Phe_AGE.txt)",
+      "Bash(awk '{print $3}' /mnt/hgfs/13324529/Phe_BF.txt)",
+      "Bash(awk '{print $2}' /mnt/hgfs/13324529/genotype.ped)",
+      "Bash(R --version)",
+      "Bash(awk '{print $1}' /mnt/hgfs/13324529/Phe_AGE.txt)",
+      "Bash(awk 'NR==FNR{ped[$2]=1; next} $1 in ped' /mnt/hgfs/13324529/genotype.ped /mnt/hgfs/13324529/Phe_AGE.txt)",
+      "Bash(awk '{print $1, $2}' /mnt/hgfs/13324529/genotype.ped)",
+      "Bash(apt list *)",
+      "Bash(dpkg -l)",
+      "Read(//usr/lib/R/**)",
+      "Bash(ls -la ~/.config/Code/User/settings.json 2>/dev/null; ls -la .vscode/settings.json 2>/dev/null)",
+      "Read(//home/yee/.config/Code/User/**)",
+      "Bash(/home/yee/miniconda3/bin/R --version)",
+      "Bash(curl -s --connect-timeout 5 \"https://cloud.r-project.org/src/contrib/PACKAGES\")",
+      "Bash(curl -s --connect-timeout 5 \"https://mirrors.tuna.tsinghua.edu.cn/CRAN/src/contrib/PACKAGES\")",
+      "Bash(/home/yee/miniconda3/bin/Rscript -e ' *)",
+      "Bash(/home/yee/miniconda3/bin/Rscript -e 'cat\\(.libPaths\\(\\), sep = \"\\\\n\"\\)')",
+      "Bash(/home/yee/miniconda3/bin/Rscript -e 'cat\\(devtools::system_rtools\\(\\), \"\\\\n\"\\)')",
+      "Read(//home/yee/miniconda3/lib/R/library/**)",
+      "Bash(make --version)",
+      "Bash(gcc --version)",
+      "Bash(sudo apt-get install -y build-essential gfortran)",
+      "Bash(/home/yee/miniconda3/bin/conda install *)",
+      "Bash(/home/yee/miniconda3/bin/conda search *)",
+      "Bash(sudo -S apt-get install -y build-essential gfortran liblapack-dev libopenblas-dev libcurl4-openssl-dev libssl-dev libxml2-dev)"
+    ]
+  }
+}
